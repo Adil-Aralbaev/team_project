@@ -7,3 +7,10 @@ class PostSerializer(serializers.ModelSerializer):
         model = Post
         exclude = ['user', ]
         fields = '__all__'
+
+class RatingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Rating
+        fields = '__all__'
+
+
